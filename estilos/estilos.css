@@ -1,0 +1,141 @@
+*{  margin: 0;
+    padding: 0;
+    box-sizing: border-box;}
+
+html {
+    font-size: 62.5%; }
+
+a {
+    text-decoration: none; }
+
+li {
+    text-decoration: none; }
+
+.nav-link {
+    color: black; }
+
+.nav-link:hover {
+    color: white; }
+
+header {
+    padding-top: 10px;
+    width: 100%; }
+
+@keyframes fc_esculturas {
+    0% {
+        opacity: 0; }
+    100% {
+        opacity: 1; } }
+
+.logo {
+    text-align: center; }
+.logoheader {
+     display: block;
+     width: 80%;
+     height: auto;
+     margin: auto;
+     animation-name: fc_esculturas;
+     animation-duration: 5s; }
+      
+.nav {
+    justify-content: center;
+    font-size: 1.5rem; }
+      
+#nav-link-active {
+    background-color: red;
+    color: white; }
+
+#nav-link:active {
+    background-color: red; }
+      
+footer {
+    padding: 2rem;
+    display: grid;
+    grid-template-rows: 0.5fr;
+    grid-template-columns: 1fr 1fr;
+    justify-content: space-between; }
+      
+.paragraph {
+    text-align: center;
+    color: black;
+    font-size: 1.5em;
+    font-weight: bold; }
+
+.redes {
+    text-align: center;
+    color: black;
+    font-weight: bold;
+    font-size: 1.5em; }
+
+body {
+    background: linear-gradient(0deg, #188055 50%, #e7cc68 100%); }
+
+.imgnose{
+    width: 100%;
+}
+
+.contenedor{
+    text-align: center;
+    padding-top: 10px;
+    margin: 0 auto;
+    max-width: 900px;
+}
+
+
+.titulo {
+    text-align: center;
+    padding-top: 1rem;
+    color: white;
+    font-size: 2.5rem;
+}
+
+.contenedor-esculturas {
+    margin-top: 1rem;
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.card {
+    margin-bottom: 2rem;
+    text-align: center;
+    border: 2px solid black;
+    border-radius: 10px;
+    color: white;
+    overflow: hidden;
+}
+
+.imagen-escultura {
+    height: 200px;
+    object-fit: cover;
+    object-position: center;
+}
+
+.btn-favorito {
+    font-size: 1.2rem;
+    font-weight: 500;
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    margin: 1rem 0;
+    border-radius: 10px;
+    outline: none;
+    border: none;
+    cursor: pointer;
+}
+
+.btn-favorito:hover {
+    background-color: aliceblue;
+}
+
+/* Favoritos */
+h3 {
+    color:black;
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.listado-favoritos{
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: repeat(4, 1fr);
+}
