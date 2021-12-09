@@ -39,8 +39,8 @@ const esculturas = [
 
 let favoritos = [];
 
-const contenedorEsculturas = document.querySelector('.contenedor-esculturas');
-const contenedorFavoritos = document.querySelector('.listado-favoritos');
+const contenedorEsculturas = $('.contenedor-esculturas');
+const contenedorFavoritos = $('.listado-favoritos');
 
 document.addEventListener('DOMContentLoaded', () => {
     favoritos = JSON.parse(localStorage.getItem('favoritos')) || [];
@@ -73,7 +73,7 @@ function mostrarEsculturas(){
         div.appendChild(titulo);
         div.appendChild(btnAgregar);
 
-        contenedorEsculturas.appendChild(div)
+        contenedorEsculturas.append(div)
     })
 }
 
