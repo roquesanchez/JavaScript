@@ -40,11 +40,10 @@ const esculturas = [
 let favoritos = [];
 
 const contenedorEsculturas = $('.contenedor-esculturas');
-const contenedorFavoritos = $('.listado-favoritos');
+const contenedorFavoritos = document.querySelector('.listado-favoritos');
 
 document.addEventListener('DOMContentLoaded', () => {
     favoritos = JSON.parse(localStorage.getItem('favoritos')) || [];
-    console.log(favoritos);
     mostrarFavoritos(favoritos);
     mostrarEsculturas();
 })
@@ -107,3 +106,5 @@ function limpiarHtmlPrevio () {
         contenedorFavoritos.removeChild(contenedorFavoritos.firstElementChild)
     }
 }
+
+$('body .favorito').append("Mis Favoritos");
